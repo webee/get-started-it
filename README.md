@@ -1,4 +1,4 @@
-# get-started-it 主题 | Hugo [![Netlify Status](https://api.netlify.com/api/v1/badges/e60303f2-862c-4342-bf59-7c9adb10812e/deploy-status)](https://app.netlify.com/sites/hugo-loveit/deploys)
+# get-started-it 主题 | Hugo [![Netlify Status](https://api.netlify.com/api/v1/badges/79e0e3d9-9fbb-4c7a-b609-d6080b1570c3/deploy-status)](https://app.netlify.com/sites/elegant-mccarthy-6fabfa/deploys)
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/webee/get-started-it?style=flat-square)](https://github.com/webee/get-started-it/releases)
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
