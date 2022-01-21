@@ -2,14 +2,16 @@ version: 2.1
 jobs:
   build-check:
     docker:
-      - image: cibuilds/hugo:0.62
-    working_directory: ~/LoveIt
+      - image: cibuilds/hugo:0.92
+    working_directory: ~/get-started-it
     steps:
       - checkout
-      - run: git submodule sync
-      - run: git submodule update --init
-      - run: hugo --source=exampleSite -v --gc
-      - run: htmlproofer exampleSite/public --check-html --allow-hash-href --empty-alt-ignore --disable-external
+      - run:
+          name: 'Hugo Build'
+          command: HUGO_ENV=production hugo -v -s exampleSite
+      - run:
+          name: 'Test Website'
+          command: htmlproofer exampleSite/public --check-html --allow-hash-href --empty-alt-ignore --disable-external
 
 workflows:
   build-check-exampleSite:
