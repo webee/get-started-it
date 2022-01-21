@@ -7,7 +7,7 @@ defaultContentLanguage = "zh-cn"
 theme = "get-started-it"
 # themes directory
 # 主题目录
-themesDir = "../.."
+themesDir = "themes"
 
 # website title
 # 网站标题
