@@ -1,18 +1,18 @@
 ---
 weight: 1
-title: "主题文档 - 基本概念"
+title: '主题文档 - 基本概念'
 date: 2020-03-06T21:40:32+08:00
 lastmod: 2020-03-06T21:40:32+08:00
 draft: false
-author: "Dillon"
-authorLink: "https://dillonzq.com"
-description: "探索 Hugo - LoveIt 主题的全部内容和背后的核心概念."
+author: 'Dillon'
+authorLink: 'https://dillonzq.com'
+description: '探索 Hugo - LoveIt 主题的全部内容和背后的核心概念.'
 resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+  - name: 'featured-image'
+    src: 'featured-image.jpg'
 
-tags: ["installation", "configuration"]
-categories: ["documentation"]
+tags: ['installation', 'configuration']
+categories: ['documentation']
 
 lightgallery: true
 
@@ -157,7 +157,7 @@ hugo serve
 
 去查看 `http://localhost:1313`.
 
-![基本配置下的预览](basic-configuration-preview.zh-cn.png "基本配置下的预览")
+![基本配置下的预览](basic-configuration-preview.zh-cn.png '基本配置下的预览')
 
 {{< admonition tip >}}
 当你运行 `hugo serve` 时, 当文件内容更改时, 页面会随着更改自动刷新.
@@ -170,6 +170,7 @@ hugo serve
 ```bash
 hugo serve --disableFastRender
 ```
+
 {{< /admonition >}}
 
 ### 2.6 构建网站
@@ -749,7 +750,7 @@ hugo
   # CDN 数据文件名称, 默认不启用
   # ("jsdelivr.yml")
   data = ""
-````
+```
 
 默认的 CDN 数据文件位于 `themes/LoveIt/assets/data/cdn/` 目录.
 可以在你的项目下相同路径存放你自己的数据文件: `assets/data/cdn/`.
@@ -786,18 +787,18 @@ hugo
 你可以参考它来配置你的社交链接.
 {{< /admonition >}}
 
-![完整配置下的预览](complete-configuration-preview.zh-cn.png "完整配置下的预览")
+![完整配置下的预览](complete-configuration-preview.zh-cn.png '完整配置下的预览')
 
 ### 3.2 网站图标, 浏览器配置, 网站清单
 
 强烈建议你把:
 
-* apple-touch-icon.png (180x180)
-* favicon-32x32.png (32x32)
-* favicon-16x16.png (16x16)
-* mstile-150x150.png (150x150)
-* android-chrome-192x192.png (192x192)
-* android-chrome-512x512.png (512x512)
+- apple-touch-icon.png (180x180)
+- favicon-32x32.png (32x32)
+- favicon-16x16.png (16x16)
+- mstile-150x150.png (150x150)
+- android-chrome-192x192.png (192x192)
+- android-chrome-512x512.png (512x512)
 
 放在 `/static` 目录. 利用 [https://realfavicongenerator.net/](https://realfavicongenerator.net/) 可以很容易地生成这些文件.
 
@@ -830,30 +831,30 @@ $code-font-family: Fira Mono, Source Code Pro, Menlo, Consolas, Monaco, monospac
 
 **LoveIt** 主题完全兼容 Hugo 的多语言模式, 并且支持在网页上切换语言.
 
-![语言切换](language-switch.gif "语言切换")
+![语言切换](language-switch.gif '语言切换')
 
 ### 4.1 兼容性 {#language-compatibility}
 
 {{< version 0.2.10 changed >}}
 
-| 语言 | Hugo 代码 | HTML `lang` 属性 | 主题文档 | Lunr.js 支持 |
-|:---- |:----:|:----:|:----:|:----:|
-| 英语 | `en` | `en` | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
-| 简体中文 | `zh-cn` | `zh-CN` | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
-| 法语 | `fr` | `fr` | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
-| 波兰语 | `pl` | `pl` | :(far fa-square fa-fw): | :(far fa-square fa-fw): |
-| 巴西葡萄牙语 | `pt-br` | `pt-BR` | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
-| 意大利语 | `it` | `it` | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
-| 西班牙语 | `es` | `es` | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
-| 德语 | `de` | `de` | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
-| 塞尔维亚语 | `pl` | `pl` | :(far fa-square fa-fw): | :(far fa-square fa-fw): |
-| 俄语 | `ru` | `ru` | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
-| 罗马尼亚语 | `ro` | `ro` | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
-| 越南语 | `vi` | `vi` | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
+| 语言         | Hugo 代码 | HTML `lang` 属性 |           主题文档            |         Lunr.js 支持          |
+| :----------- | :-------: | :--------------: | :---------------------------: | :---------------------------: |
+| 英语         |   `en`    |       `en`       | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
+| 简体中文     |  `zh-cn`  |     `zh-CN`      | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
+| 法语         |   `fr`    |       `fr`       |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| 波兰语       |   `pl`    |       `pl`       |    :(far fa-square fa-fw):    |    :(far fa-square fa-fw):    |
+| 巴西葡萄牙语 |  `pt-br`  |     `pt-BR`      |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| 意大利语     |   `it`    |       `it`       |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| 西班牙语     |   `es`    |       `es`       |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| 德语         |   `de`    |       `de`       |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| 塞尔维亚语   |   `pl`    |       `pl`       |    :(far fa-square fa-fw):    |    :(far fa-square fa-fw):    |
+| 俄语         |   `ru`    |       `ru`       |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| 罗马尼亚语   |   `ro`    |       `ro`       |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| 越南语       |   `vi`    |       `vi`       |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
 
 ### 4.2 基本配置
 
-学习了 [Hugo如何处理多语言网站](https://gohugo.io/content-management/multilingual) 之后, 请在 [站点配置](#site-configuration) 中定义你的网站语言.
+学习了 [Hugo 如何处理多语言网站](https://gohugo.io/content-management/multilingual) 之后, 请在 [站点配置](#site-configuration) 中定义你的网站语言.
 
 例如, 一个支持英语, 中文和法语的网站配置:
 
@@ -960,9 +961,9 @@ defaultContentLanguage = "zh-cn"
 
 单个文件 `my-page.md` 需要分为三个文件:
 
-* 英语: `my-page.en.md`
-* 中文: `my-page.zh-cn.md`
-* 法语: `my-page.fr.md`
+- 英语: `my-page.en.md`
+- 中文: `my-page.zh-cn.md`
+- 法语: `my-page.fr.md`
 
 {{< admonition >}}
 请注意, 菜单中仅显示翻译的页面. 它不会替换为默认语言内容.
@@ -1028,8 +1029,8 @@ defaultContentLanguage = "zh-cn"
 {{< admonition note "怎样选择搜索引擎?" >}}
 以下是两种搜索引擎的对比:
 
-* `lunr`: 简单, 无需同步 `index.json`, 没有 `contentLength` 的限制, 但占用带宽大且性能低 (特别是中文需要一个较大的分词依赖库)
-* `algolia`: 高性能并且占用带宽低, 但需要同步 `index.json` 且有 `contentLength` 的限制
+- `lunr`: 简单, 无需同步 `index.json`, 没有 `contentLength` 的限制, 但占用带宽大且性能低 (特别是中文需要一个较大的分词依赖库)
+- `algolia`: 高性能并且占用带宽低, 但需要同步 `index.json` 且有 `contentLength` 的限制
 
 {{< version 0.2.3 >}} 文章内容被 `h2` 和 `h3` HTML 标签切分来提高查询效果并且基本实现全文搜索.
 `contentLength` 用来限制 `h2` 和 `h3` HTML 标签开头的内容部分的最大长度.

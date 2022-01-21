@@ -1,18 +1,18 @@
 ---
 weight: 2
-title: "Theme Documentation - Content"
+title: 'Theme Documentation - Content'
 date: 2020-03-05T15:58:26+08:00
 lastmod: 2020-03-05T15:58:26+08:00
 draft: false
-author: "Dillon"
-authorLink: "https://dillonzq.com"
-description: "Find out how to create and organize your content quickly and intuitively in LoveIt theme."
+author: 'Dillon'
+authorLink: 'https://dillonzq.com'
+description: 'Find out how to create and organize your content quickly and intuitively in LoveIt theme.'
 resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+  - name: 'featured-image'
+    src: 'featured-image.jpg'
 
-tags: ["content", "Markdown"]
-categories: ["documentation"]
+tags: ['content', 'Markdown']
+categories: ['documentation']
 
 lightgallery: true
 
@@ -30,9 +30,9 @@ Find out how to create and organize your content quickly and intuitively in **Lo
 
 A few suggestions to help you get a good looking site quickly:
 
-* Keep post pages in the `content/posts` directory, for example: `content/posts/my-first-post.md`
-* Keep other pages in the `content` directory, for example: `content/about.md`
-* Local resources organization
+- Keep post pages in the `content/posts` directory, for example: `content/posts/my-first-post.md`
+- Keep other pages in the `content` directory, for example: `content/about.md`
+- Local resources organization
 
 {{< admonition note "Local Resource Reference" >}}
 {{< version 0.2.10 >}}
@@ -69,21 +69,21 @@ Here is a front matter example:
 
 ```yaml
 ---
-title: "My First Post"
-subtitle: ""
+title: 'My First Post'
+subtitle: ''
 date: 2020-03-04T15:58:26+08:00
 lastmod: 2020-03-04T15:58:26+08:00
 draft: true
-author: ""
-authorLink: ""
-description: ""
-license: ""
+author: ''
+authorLink: ''
+description: ''
+license: ''
 images: []
 
 tags: []
 categories: []
-featuredImage: ""
-featuredImagePreview: ""
+featuredImage: ''
+featuredImagePreview: ''
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -105,7 +105,7 @@ math:
   enable: true
   # ...
 mapbox:
-  accessToken: ""
+  accessToken: ''
   # ...
 share:
   enable: true
@@ -130,40 +130,40 @@ seo:
 ---
 ```
 
-* **title**: the title for the content.
-* **subtitle**: {{< version 0.2.0 >}} the subtitle for the content.
-* **date**: the datetime assigned to this page, which is usually fetched from the `date` field in front matter, but this behaviour is configurabl in the [site configuration](../theme-documentation-basics#site-configuration).
-* **lastmod**: the datetime at which the content was last modified.
-* **draft**: if `true`, the content will not be rendered unless the `--buildDrafts`/`-D` flag is passed to the `hugo` command.
-* **author**: the author for the content.
-* **authorLink**: the link of the author.
-* **description**: the description for the content.
-* **license**: the special lisence for this content.
-* **images**: page images for Open Graph and Twitter Cards.
+- **title**: the title for the content.
+- **subtitle**: {{< version 0.2.0 >}} the subtitle for the content.
+- **date**: the datetime assigned to this page, which is usually fetched from the `date` field in front matter, but this behaviour is configurabl in the [site configuration](../theme-documentation-basics#site-configuration).
+- **lastmod**: the datetime at which the content was last modified.
+- **draft**: if `true`, the content will not be rendered unless the `--buildDrafts`/`-D` flag is passed to the `hugo` command.
+- **author**: the author for the content.
+- **authorLink**: the link of the author.
+- **description**: the description for the content.
+- **license**: the special lisence for this content.
+- **images**: page images for Open Graph and Twitter Cards.
 
-* **tags**: the tags for the content.
-* **categories**: the categories for the content.
-* **featuredImage**: the featured image for the content.
-* **featuredImagePreview**: the featured image for the content preview in the home page.
+- **tags**: the tags for the content.
+- **categories**: the categories for the content.
+- **featuredImage**: the featured image for the content.
+- **featuredImagePreview**: the featured image for the content preview in the home page.
 
-* **hiddenFromHomePage**: if `true`, the content will not be shown in the home page.
-* **hiddenFromSearch**: {{< version 0.2.0 >}} if `true`, the content will not be shown in the search results.
-* **twemoji**: {{< version 0.2.0 >}} if `true`, the content will enable the twemoji.
-* **lightgallery**: if `true`, images in the content will be shown as the gallery.
-* **ruby**: {{< version 0.2.0 >}} if `true`, the content will enable the [ruby extended syntax](#ruby).
-* **fraction**: {{< version 0.2.0 >}} if `true`, the content will enable the [fraction extended syntax](#fraction).
-* **fontawesome**: {{< version 0.2.0 >}} if `true`, the content will enable the [Font Awesome extended syntax](#fontawesome).
-* **linkToMarkdown**: if `true`, the footer of the content will be shown the link to the orignal Markdown file.
-* **rssFullText**: {{< version 0.2.4 >}} if `true`, the full text content will be shown in RSS.
+- **hiddenFromHomePage**: if `true`, the content will not be shown in the home page.
+- **hiddenFromSearch**: {{< version 0.2.0 >}} if `true`, the content will not be shown in the search results.
+- **twemoji**: {{< version 0.2.0 >}} if `true`, the content will enable the twemoji.
+- **lightgallery**: if `true`, images in the content will be shown as the gallery.
+- **ruby**: {{< version 0.2.0 >}} if `true`, the content will enable the [ruby extended syntax](#ruby).
+- **fraction**: {{< version 0.2.0 >}} if `true`, the content will enable the [fraction extended syntax](#fraction).
+- **fontawesome**: {{< version 0.2.0 >}} if `true`, the content will enable the [Font Awesome extended syntax](#fontawesome).
+- **linkToMarkdown**: if `true`, the footer of the content will be shown the link to the orignal Markdown file.
+- **rssFullText**: {{< version 0.2.4 >}} if `true`, the full text content will be shown in RSS.
 
-* **toc**: {{< version 0.2.9 changed >}} the same as the `params.page.toc` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **code**: {{< version 0.2.0 >}} the same as the `params.page.code` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **math**: {{< version 0.2.0 changed >}} the same as the `params.page.math` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **mapbox**: {{< version 0.2.0 >}} the same as the `params.page.mapbox` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **share**: the same as the `params.page.share` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **comment**: {{< version 0.2.0 changed >}} the same as the `params.page.comment` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **library**: {{< version 0.2.7 >}} the same as the `params.page.library` part in the [site configuration](../theme-documentation-basics#site-configuration).
-* **seo**: {{< version 0.2.10 >}} the same as the `params.page.seo` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **toc**: {{< version 0.2.9 changed >}} the same as the `params.page.toc` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **code**: {{< version 0.2.0 >}} the same as the `params.page.code` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **math**: {{< version 0.2.0 changed >}} the same as the `params.page.math` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **mapbox**: {{< version 0.2.0 >}} the same as the `params.page.mapbox` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **share**: the same as the `params.page.share` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **comment**: {{< version 0.2.0 changed >}} the same as the `params.page.comment` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **library**: {{< version 0.2.7 >}} the same as the `params.page.library` part in the [site configuration](../theme-documentation-basics#site-configuration).
+- **seo**: {{< version 0.2.10 >}} the same as the `params.page.seo` part in the [site configuration](../theme-documentation-basics#site-configuration).
 
 {{< admonition tip >}}
 {{< version 0.2.10 >}}
@@ -175,18 +175,19 @@ it is not necessary to set the parameter `featuredImage` or `featuredImagePrevie
 
 ```yaml
 resources:
-- name: featured-image
-  src: featured-image.jpg
-- name: featured-image-preview
-  src: featured-image-preview.jpg
+  - name: featured-image
+    src: featured-image.jpg
+  - name: featured-image-preview
+    src: featured-image-preview.jpg
 ```
+
 {{< /admonition >}}
 
 ## 3 Content Summaries
 
 **LoveIt** theme uses the summary of the content to display abstract information in the home page. Hugo can generate summaries of your content.
 
-![Summary Preview](summary.png "Summary Preview")
+![Summary Preview](summary.en.png 'Summary Preview')
 
 ### Automatic Summary Splitting
 
@@ -273,12 +274,12 @@ $$ c = \pm\sqrt{a^2 + b^2} $$
 The default inline delimiters are `$`/`$` and `\\(`/`\\)`:
 
 ```markdown
-$ c = \pm\sqrt{a^2 + b^2} $ and \\( f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\)
+$ c = \pm\sqrt{a^2 + b^2} $ and \\( f(x)=\int\_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\)
 ```
 
 The rendered output looks like this:
 
-$ c = \pm\sqrt{a^2 + b^2} $ and \\( f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\)
+$ c = \pm\sqrt{a^2 + b^2} $ and \\( f(x)=\int\_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\)
 
 {{< admonition tip >}}
 You can add more block and inline delimiters in your [site configuration](../theme-documentation-basics#site-configuration).

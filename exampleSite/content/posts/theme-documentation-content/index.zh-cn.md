@@ -1,18 +1,18 @@
 ---
 weight: 2
-title: "主题文档 - 内容"
+title: '主题文档 - 内容'
 date: 2020-03-05T16:30:05+08:00
 lastmod: 2020-03-05T16:30:05+08:00
 draft: false
-author: "Dillon"
-authorLink: "https://dillonzq.com"
-description: "了解如何在 LoveIt 主题中快速, 直观地创建和组织内容."
+author: 'Dillon'
+authorLink: 'https://dillonzq.com'
+description: '了解如何在 LoveIt 主题中快速, 直观地创建和组织内容.'
 resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+  - name: 'featured-image'
+    src: 'featured-image.jpg'
 
-tags: ["content", "Markdown"]
-categories: ["documentation"]
+tags: ['content', 'Markdown']
+categories: ['documentation']
 
 lightgallery: true
 
@@ -30,9 +30,9 @@ math:
 
 以下是一些方便你清晰管理和生成文章的目录结构建议:
 
-* 保持博客文章存放在 `content/posts` 目录, 例如: `content/posts/我的第一篇文章.md`
-* 保持简单的静态页面存放在 `content` 目录, 例如: `content/about.md`
-* 本地资源组织
+- 保持博客文章存放在 `content/posts` 目录, 例如: `content/posts/我的第一篇文章.md`
+- 保持简单的静态页面存放在 `content` 目录, 例如: `content/about.md`
+- 本地资源组织
 
 {{< admonition note "本地资源引用" >}}
 {{< version 0.2.10 >}}
@@ -68,21 +68,21 @@ math:
 
 ```yaml
 ---
-title: "我的第一篇文章"
-subtitle: ""
+title: '我的第一篇文章'
+subtitle: ''
 date: 2020-03-04T15:58:26+08:00
 lastmod: 2020-03-04T15:58:26+08:00
 draft: true
-author: ""
-authorLink: ""
-description: ""
-license: ""
+author: ''
+authorLink: ''
+description: ''
+license: ''
 images: []
 
 tags: []
 categories: []
-featuredImage: ""
-featuredImagePreview: ""
+featuredImage: ''
+featuredImagePreview: ''
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -104,7 +104,7 @@ math:
   enable: true
   # ...
 mapbox:
-  accessToken: ""
+  accessToken: ''
   # ...
 share:
   enable: true
@@ -129,40 +129,40 @@ seo:
 ---
 ```
 
-* **title**: 文章标题.
-* **subtitle**: {{< version 0.2.0 >}} 文章副标题.
-* **date**: 这篇文章创建的日期时间. 它通常是从文章的前置参数中的 `date` 字段获取的, 但是也可以在 [网站配置](../theme-documentation-basics#site-configuration) 中设置.
-* **lastmod**: 上次修改内容的日期时间.
-* **draft**: 如果设为 `true`, 除非 `hugo` 命令使用了 `--buildDrafts`/`-D` 参数, 这篇文章不会被渲染.
-* **author**: 文章作者.
-* **authorLink**: 文章作者的链接.
-* **description**: 文章内容的描述.
-* **license**: 这篇文章特殊的许可.
-* **images**: 页面图片, 用于 Open Graph 和 Twitter Cards.
+- **title**: 文章标题.
+- **subtitle**: {{< version 0.2.0 >}} 文章副标题.
+- **date**: 这篇文章创建的日期时间. 它通常是从文章的前置参数中的 `date` 字段获取的, 但是也可以在 [网站配置](../theme-documentation-basics#site-configuration) 中设置.
+- **lastmod**: 上次修改内容的日期时间.
+- **draft**: 如果设为 `true`, 除非 `hugo` 命令使用了 `--buildDrafts`/`-D` 参数, 这篇文章不会被渲染.
+- **author**: 文章作者.
+- **authorLink**: 文章作者的链接.
+- **description**: 文章内容的描述.
+- **license**: 这篇文章特殊的许可.
+- **images**: 页面图片, 用于 Open Graph 和 Twitter Cards.
 
-* **tags**: 文章的标签.
-* **categories**: 文章所属的类别.
-* **featuredImage**: 文章的特色图片.
-* **featuredImagePreview**: 用在主页预览的文章特色图片.
+- **tags**: 文章的标签.
+- **categories**: 文章所属的类别.
+- **featuredImage**: 文章的特色图片.
+- **featuredImagePreview**: 用在主页预览的文章特色图片.
 
-* **hiddenFromHomePage**: 如果设为 `true`, 这篇文章将不会显示在主页上.
-* **hiddenFromSearch**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章将不会显示在搜索结果中.
-* **twemoji**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 twemoji.
-* **lightgallery**: 如果设为 `true`, 文章中的图片将可以按照画廊形式呈现.
-* **ruby**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 [上标注释扩展语法](#ruby).
-* **fraction**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 [分数扩展语法](#fraction).
-* **fontawesome**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 [Font Awesome 扩展语法](#fontawesome).
-* **linkToMarkdown**: 如果设为 `true`, 内容的页脚将显示指向原始 Markdown 文件的链接.
-* **rssFullText**: {{< version 0.2.4 >}} 如果设为 `true`, 在 RSS 中将会显示全文内容.
+- **hiddenFromHomePage**: 如果设为 `true`, 这篇文章将不会显示在主页上.
+- **hiddenFromSearch**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章将不会显示在搜索结果中.
+- **twemoji**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 twemoji.
+- **lightgallery**: 如果设为 `true`, 文章中的图片将可以按照画廊形式呈现.
+- **ruby**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 [上标注释扩展语法](#ruby).
+- **fraction**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 [分数扩展语法](#fraction).
+- **fontawesome**: {{< version 0.2.0 >}} 如果设为 `true`, 这篇文章会使用 [Font Awesome 扩展语法](#fontawesome).
+- **linkToMarkdown**: 如果设为 `true`, 内容的页脚将显示指向原始 Markdown 文件的链接.
+- **rssFullText**: {{< version 0.2.4 >}} 如果设为 `true`, 在 RSS 中将会显示全文内容.
 
-* **toc**: {{< version 0.2.9 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.toc` 部分相同.
-* **code**: {{< version 0.2.0 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.code` 部分相同.
-* **math**: {{< version 0.2.0 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.math` 部分相同.
-* **mapbox**: {{< version 0.2.0 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.mapbox` 部分相同.
-* **share**: 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.share` 部分相同.
-* **comment**: {{< version 0.2.0 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.comment` 部分相同.
-* **library**: {{< version 0.2.7 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.library` 部分相同.
-* **seo**: {{< version 0.2.10 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.seo` 部分相同.
+- **toc**: {{< version 0.2.9 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.toc` 部分相同.
+- **code**: {{< version 0.2.0 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.code` 部分相同.
+- **math**: {{< version 0.2.0 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.math` 部分相同.
+- **mapbox**: {{< version 0.2.0 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.mapbox` 部分相同.
+- **share**: 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.share` 部分相同.
+- **comment**: {{< version 0.2.0 changed >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.comment` 部分相同.
+- **library**: {{< version 0.2.7 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.library` 部分相同.
+- **seo**: {{< version 0.2.10 >}} 和 [网站配置](../theme-documentation-basics#site-configuration) 中的 `params.page.seo` 部分相同.
 
 {{< admonition tip >}}
 {{< version 0.2.10 >}}
@@ -174,18 +174,19 @@ seo:
 
 ```yaml
 resources:
-- name: featured-image
-  src: featured-image.jpg
-- name: featured-image-preview
-  src: featured-image-preview.jpg
+  - name: featured-image
+    src: featured-image.jpg
+  - name: featured-image-preview
+    src: featured-image-preview.jpg
 ```
+
 {{< /admonition >}}
 
 ## 3 内容摘要
 
 **LoveIt** 主题使用内容摘要在主页中显示大致文章信息。Hugo 支持生成文章的摘要.
 
-![文章摘要预览](summary.zh-cn.png "文章摘要预览")
+![文章摘要预览](summary.png '文章摘要预览')
 
 ### 自动摘要拆分
 
@@ -269,15 +270,15 @@ $$ c = \pm\sqrt{a^2 + b^2} $$
 
 #### 行内公式
 
-默认的行内公式分割符是  `$`/`$` 和 `\\(`/`\\)`:
+默认的行内公式分割符是 `$`/`$` 和 `\\(`/`\\)`:
 
 ```markdown
-$ c = \pm\sqrt{a^2 + b^2} $ 和 \\( f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\)
+$ c = \pm\sqrt{a^2 + b^2} $ 和 \\( f(x)=\int\_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\)
 ```
 
 呈现的输出效果如下:
 
-$ c = \pm\sqrt{a^2 + b^2} $ 和 \\( f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\)
+$ c = \pm\sqrt{a^2 + b^2} $ 和 \\( f(x)=\int\_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\)
 
 {{< admonition tip >}}
 你可以在 [网站配置](../theme-documentation-basics#site-configuration) 中自定义公式块和行内公式的分割符.

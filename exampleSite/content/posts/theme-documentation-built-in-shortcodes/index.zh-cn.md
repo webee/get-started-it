@@ -1,18 +1,18 @@
 ---
 weight: 3
-title: "主题文档 - 内置 Shortcodes"
+title: '主题文档 - 内置 Shortcodes'
 date: 2020-03-04T16:29:59+08:00
 lastmod: 2020-03-04T16:29:59+08:00
 draft: false
-author: "Dillon"
-authorLink: "https://dillonzq.com"
-description: "Hugo 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁."
+author: 'Dillon'
+authorLink: 'https://dillonzq.com'
+description: 'Hugo 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁.'
 resources:
-- name: "featured-image"
-  src: "featured-image.png"
+  - name: 'featured-image'
+    src: 'featured-image.png'
 
-tags: ["shortcodes"]
-categories: ["documentation"]
+tags: ['shortcodes']
+categories: ['documentation']
 
 lightgallery: true
 ---
@@ -49,10 +49,10 @@ Hugo 附带了一组预定义的 shortcodes, 它们实现了一些非常常见�
 
 ```html
 <figure>
-    <img src="/images/lighthouse.jpg"/>
-    <figcaption>
-        <h4>Lighthouse (figure)</h4>
-    </figcaption>
+  <img src="/images/lighthouse.jpg" />
+  <figcaption>
+    <h4>Lighthouse (figure)</h4>
+  </figcaption>
 </figure>
 ```
 
@@ -84,6 +84,7 @@ Hugo 附带了一组预定义的 shortcodes, 它们实现了一些非常常见�
 
 ```markdown
 {{</* highlight html */>}}
+
 <section id="main">
     <div>
         <h1 id="title">{{ .Title }}</h1>
@@ -98,6 +99,7 @@ Hugo 附带了一组预定义的 shortcodes, 它们实现了一些非常常见�
 呈现的输出效果如下:
 
 {{< highlight html >}}
+
 <section id="main">
     <div>
         <h1 id="title">{{ .Title }}</h1>
@@ -119,8 +121,6 @@ Hugo 附带了一组预定义的 shortcodes, 它们实现了一些非常常见�
 ```
 
 呈现的输出效果如下:
-
-{{< instagram BWNjjyYFxVx hidecaption >}}
 
 ## 5 param
 
@@ -151,8 +151,6 @@ Hugo 附带了一组预定义的 shortcodes, 它们实现了一些非常常见�
 ```
 
 呈现的输出效果如下:
-
-{{< tweet 877500564405444608 >}}
 
 ## 8 vimeo
 

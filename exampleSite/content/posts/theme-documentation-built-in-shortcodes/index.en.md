@@ -1,18 +1,18 @@
 ---
 weight: 3
-title: "Theme Documentation - Built-in Shortcodes"
+title: 'Theme Documentation - Built-in Shortcodes'
 date: 2020-03-04T16:29:41+08:00
 lastmod: 2020-03-04T16:29:41+08:00
 draft: false
-author: "Dillon"
-authorLink: "https://dillonzq.com"
-description: "Hugo provides multiple built-in shortcodes for author convenience and to keep your markdown content clean."
+author: 'Dillon'
+authorLink: 'https://dillonzq.com'
+description: 'Hugo provides multiple built-in shortcodes for author convenience and to keep your markdown content clean.'
 resources:
-- name: "featured-image"
-  src: "featured-image.png"
+  - name: 'featured-image'
+    src: 'featured-image.png'
 
-tags: ["shortcodes"]
-categories: ["documentation"]
+tags: ['shortcodes']
+categories: ['documentation']
 
 lightgallery: true
 ---
@@ -48,10 +48,10 @@ The HTML looks like this:
 
 ```html
 <figure>
-    <img src="/images/lighthouse.jpg"/>
-    <figcaption>
-        <h4>Lighthouse (figure)</h4>
-    </figcaption>
+  <img src="/images/lighthouse.jpg" />
+  <figcaption>
+    <h4>Lighthouse (figure)</h4>
+  </figcaption>
 </figure>
 ```
 
@@ -83,6 +83,7 @@ Example `highlight` input:
 
 ```markdown
 {{</* highlight html */>}}
+
 <section id="main">
     <div>
         <h1 id="title">{{ .Title }}</h1>
@@ -97,6 +98,7 @@ Example `highlight` input:
 The rendered output looks like this:
 
 {{< highlight html >}}
+
 <section id="main">
     <div>
         <h1 id="title">{{ .Title }}</h1>
@@ -118,8 +120,6 @@ Example `instagram` input:
 ```
 
 The rendered output looks like this:
-
-{{< instagram BWNjjyYFxVx hidecaption >}}
 
 ## 5 param
 
@@ -150,8 +150,6 @@ Example `tweet` input:
 ```
 
 The rendered output looks like this:
-
-{{< tweet 877500564405444608 >}}
 
 ## 8 vimeo
 
