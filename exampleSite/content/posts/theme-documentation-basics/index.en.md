@@ -1,18 +1,18 @@
 ---
 weight: 1
-title: "Theme Documentation - Basics"
+title: 'Theme Documentation - Basics'
 date: 2020-03-06T21:29:01+08:00
 lastmod: 2020-03-06T21:29:01+08:00
 draft: false
-author: "Dillon"
-authorLink: "https://dillonzq.com"
-description: "Discover what the Hugo - LoveIt theme is all about and the core-concepts behind it."
+author: 'Dillon'
+authorLink: 'https://dillonzq.com'
+description: 'Discover what the Hugo - LoveIt theme is all about and the core-concepts behind it.'
 resources:
-- name: "featured-image"
-  src: "featured-image.jpg"
+  - name: 'featured-image'
+    src: 'featured-image.jpg'
 
-tags: ["installation", "configuration"]
-categories: ["documentation"]
+tags: ['installation', 'configuration']
+categories: ['documentation']
 
 lightgallery: true
 
@@ -154,7 +154,7 @@ hugo serve
 
 Go to `http://localhost:1313`.
 
-![Basic configuration preview](basic-configuration-preview.png "Basic configuration preview")
+![Basic configuration preview](basic-configuration-preview.en.png 'Basic configuration preview')
 
 {{< admonition tip >}}
 When you run `hugo serve`, when the contents of the files change, the page automatically refreshes with the changes.
@@ -167,6 +167,7 @@ it is highly recommended that you add `--disableFastRender` parameter to `hugo s
 ```bash
 hugo serve --disableFastRender
 ```
+
 {{< /admonition >}}
 
 ### 2.6 Build the Website
@@ -745,7 +746,7 @@ You could enable these features with `hugo serve -e production`.
   # CDN data file name, disabled by default
   # ("jsdelivr.yml")
   data = ""
-````
+```
 
 The default CDN data file is located in `themes/LoveIt/assets/data/cdn/` directory.
 You can store your own data file in the same path under your project: `assets/data/cdn/`.
@@ -782,18 +783,18 @@ The default data of all supported social links is located in `themes/LoveIt/asse
 which is you can refer to.
 {{< /admonition >}}
 
-![Complete configuration preview](complete-configuration-preview.png "Complete configuration preview")
+![Complete configuration preview](complete-configuration-preview.en.png 'Complete configuration preview')
 
 ### 3.2 Favicons, Browserconfig, Manifest
 
 It is recommended to put your own favicons:
 
-* apple-touch-icon.png (180x180)
-* favicon-32x32.png (32x32)
-* favicon-16x16.png (16x16)
-* mstile-150x150.png (150x150)
-* android-chrome-192x192.png (192x192)
-* android-chrome-512x512.png (512x512)
+- apple-touch-icon.png (180x180)
+- favicon-32x32.png (32x32)
+- favicon-16x16.png (16x16)
+- mstile-150x150.png (150x150)
+- android-chrome-192x192.png (192x192)
+- android-chrome-512x512.png (512x512)
 
 into `/static`. They’re easily created via [https://realfavicongenerator.net/](https://realfavicongenerator.net/).
 
@@ -826,27 +827,27 @@ In `assets/css/_custom.scss`, you can add some css style code to customize the s
 
 **LoveIt** theme is fully compatible with Hugo multilingual mode, which provides in-browser language switching.
 
-![Language Switch](language-switch.gif "Language Switch")
+![Language Switch](language-switch.gif 'Language Switch')
 
 ### 4.1 Compatibility {#language-compatibility}
 
 {{< version 0.2.10 changed >}}
 
-| Language             | Hugo Code | HTML `lang` Attribute | Theme Docs                    | Lunr.js Support               |
-|:-------------------- |:---------:|:---------------------:|:-----------------------------:|:-----------------------------:|
-| English              | `en`      | `en`                  | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
-| Simplified Chinese   | `zh-cn`   | `zh-CN`               | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
-| French               | `fr`      | `fr`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Polish               | `pl`      | `pl`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-| Brazilian Portuguese | `pt-br`   | `pt-BR`               | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Italian              | `it`      | `it`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Spanish              | `es`      | `es`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| German               | `de`      | `de`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| German               | `de`      | `de`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Serbian              | `sr`      | `sr`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-| Russian              | `ru`      | `ru`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Romanian             | `ro`      | `ro`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Vietnamese           | `vi`      | `vi`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
+| Language             | Hugo Code | HTML `lang` Attribute |          Theme Docs           |        Lunr.js Support        |
+| :------------------- | :-------: | :-------------------: | :---------------------------: | :---------------------------: |
+| English              |   `en`    |         `en`          | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
+| Simplified Chinese   |  `zh-cn`  |        `zh-CN`        | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
+| French               |   `fr`    |         `fr`          |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| Polish               |   `pl`    |         `pl`          |    :(far fa-square fa-fw):    |    :(far fa-square fa-fw):    |
+| Brazilian Portuguese |  `pt-br`  |        `pt-BR`        |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| Italian              |   `it`    |         `it`          |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| Spanish              |   `es`    |         `es`          |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| German               |   `de`    |         `de`          |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| German               |   `de`    |         `de`          |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| Serbian              |   `sr`    |         `sr`          |    :(far fa-square fa-fw):    |    :(far fa-square fa-fw):    |
+| Russian              |   `ru`    |         `ru`          |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| Romanian             |   `ro`    |         `ro`          |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
+| Vietnamese           |   `vi`    |         `vi`          |    :(far fa-square fa-fw):    | :(far fa-check-square fa-fw): |
 
 ### 4.2 Basic Configuration
 
@@ -957,9 +958,9 @@ Then, for each new page, append the language code to the file name.
 
 Single file `my-page.md` is split in three files:
 
-* in English: `my-page.en.md`
-* in Chinese: `my-page.zh-cn.md`
-* in French: `my-page.fr.md`
+- in English: `my-page.en.md`
+- in Chinese: `my-page.zh-cn.md`
+- in French: `my-page.fr.md`
 
 {{< admonition >}}
 Be aware that only translated pages are displayed in menu. It’s not replaced with default language content.
@@ -1024,9 +1025,9 @@ Here is the search configuration in your [site configuration](#site-configuratio
 {{< admonition note "How to choose search engine?" >}}
 The following is a comparison of two search engines:
 
-* `lunr`: simple, no need to synchronize `index.json`, no limit for `contentLength`,
+- `lunr`: simple, no need to synchronize `index.json`, no limit for `contentLength`,
   but high bandwidth and low performance (Especially for Chinese which needs a large segmentit library)
-* `algolia`: high performance and low bandwidth, but need to synchronize `index.json` and limit for `contentLength`
+- `algolia`: high performance and low bandwidth, but need to synchronize `index.json` and limit for `contentLength`
 
 {{< version 0.2.3 >}} The content of the post is separated by `h2` and `h3` HTML tag to improve query performance and basically implement full-text search.
 `contentLength` is used to limit the max index length of the part starting with `h2` and `h3` HTML tag.
