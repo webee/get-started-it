@@ -1,4 +1,4 @@
-# get-started-it Theme | Hugo [![Netlify Status](https://api.netlify.com/api/v1/badges/79e0e3d9-9fbb-4c7a-b609-d6080b1570c3/deploy-status)](https://app.netlify.com/sites/elegant-mccarthy-6fabfa/deploys)
+# get-started-it Theme | Hugo [![Netlify Status](https://api.netlify.com/api/v1/badges/79e0e3d9-9fbb-4c7a-b609-d6080b1570c3/deploy-status)](https://app.netlify.com/sites/get-started-it/deploys)
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/webee/get-started-it?style=flat-square)](https://github.com/webee/get-started-it/releases)
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
