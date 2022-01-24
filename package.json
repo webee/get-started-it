@@ -23,12 +23,11 @@
     "build-lunr-segmentit": "browserify src/lib/lunr.segmentit.js -o assets/lib/lunr/lunr.segmentit.js -t babelify --presets @babel/preset-env --presets minify",
     "start": "npm run babel && hugo server --source=exampleSite --themesDir ../.. -D --disableFastRender",
     "start-production": "npm run babel && hugo server --source=exampleSite --themesDir ../.. -D --disableFastRender -e production",
-    "check": "htmlproofer exampleSite/public --check-html --allow-hash-href --empty-alt-ignore --disable-external",
-    "copy": "rm -rf resources && cp -rf exampleSite/resources resources"
+    "check": "htmlproofer exampleSite/public --check-html --allow-hash-href --empty-alt-ignore --disable-external"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run build && npm run copy && git add resources assets/js"
+      "pre-commit": "npm run build && git add resources assets/js"
     }
   },
   "repository": {

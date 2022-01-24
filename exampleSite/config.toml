@@ -8,6 +8,7 @@ theme = "get-started-it"
 # themes directory
 # 主题目录
 themesDir = "themes"
+resourceDir = "../resources"
 
 # website title
 # 网站标题
