@@ -1,7 +1,7 @@
-{{- .Scratch.Set "version" "0.2.10" -}}
+{{- .Scratch.Set "version" "0.3.0" -}}
 
 {{- /* get-started-it theme version detection */ -}}
-{{- $VERSION := "0.2.X" -}}
+{{- $VERSION := "0.3.X" -}}
 {{- if eq .Site .Sites.First -}}
     {{- if not .Site.Params.version -}}
         {{- errorf "Configuration Error 配置文件错误\n\nYou haven't configured the get-started-it version param correctly yet. See https://get-started.site/theme-documentation-basics/#basic-configuration\n你还没有正确配置 get-started-it 的版本参数. 参考 https://get-started.site/zh-cn/theme-documentation-basics/#basic-configuration\n" -}}

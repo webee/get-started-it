@@ -428,7 +428,7 @@ enableEmoji = true
 [params]
   # get-started-it theme version
   # get-started-it 主题版本
-  version = "0.2.X"
+  version = "0.3.X"
   # site default theme ("light", "dark", "auto")
   # 网站默认主题 ("light", "dark", "auto")
   defaultTheme = "auto"
