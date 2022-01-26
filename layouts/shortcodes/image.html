@@ -18,7 +18,7 @@
 {{- $options = dict "Resources" .Page.Resources | merge $options -}}
 
 {{- with $caption -}}
-    <figure{{ with cond $.IsNamedParams ($.Get "class") "" }} class="{{ . }}"{{ end }}>
+    <figure {{ with cond $.IsNamedParams ($.Get "class" ) "" }}class="{{ . }}"{{ end }}>
         {{- partial "plugin/image.html" $options -}}
         <figcaption class="image-caption">
             {{- . | safeHTML -}}
