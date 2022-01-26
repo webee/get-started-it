@@ -1,6 +1,7 @@
 {
   "name": "get-started-it",
   "short_name": "get-started-it",
+  "start_url": "/",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

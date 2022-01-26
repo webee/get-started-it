@@ -1,0 +1,7 @@
+{{ if and .Site.Params.enableServiceWorker (eq hugo.Environment "production") }}
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/sw.js", { scope: "/" });
+        }
+    </script>
+{{ end }}
